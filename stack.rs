@@ -3,6 +3,9 @@ struct Stack<T>{
     stack: Vec<T>
 }
 
+//impl: implements method on described struct
+// here the arg self means it points to the Struct and `&` means it can borrow or not
+//there is a difference between Self and self
 impl<T> Stack<T> {
     fn new() -> Self{
         Stack { stack: Vec::new() }
